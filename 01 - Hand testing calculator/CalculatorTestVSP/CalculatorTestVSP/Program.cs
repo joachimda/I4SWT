@@ -10,15 +10,14 @@ namespace CalculatorTestVSP
     {
         static void Main(string[] args)
         {
-            Calculator c = new Calculator();
+            CalculatorTest ct = new CalculatorTest();
+            Calculator c = new Calculator();            
+            ct.TestAdd();
+            ct.TestMultiply();
+            ct.TestPower();
+            ct.TestSubtract();
+            ct.TestDivision();
 
-            Console.WriteLine(c.Power(2, 3));
-
-            Console.WriteLine(c.Add(3, 7));
-
-            Console.WriteLine(c.Multiply(10, 21));
-
-            Console.WriteLine(c.Subtract(20, 80));
 
         }
     }
